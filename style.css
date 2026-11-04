@@ -1,0 +1,522 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: #ffffff;
+    color:#28513b;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1 {    
+    font-size: 48px;
+    margin-top: 100px;
+}
+p{
+    font-size: 20px;
+        } 
+header{
+    background-color: #ffffff;
+    padding:20px 40px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+.brand{
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color:#28513b;
+}
+nav a{
+    color:#28513b;
+    font-size: 16px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #c47750;
+}
+.brand img{
+    width: 175px;
+    height: auto;
+    display: block;
+}
+footer{
+    background-color: #122d4a;
+    height: auto;
+    min-height: 0;
+    margin-top: 32px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+footer img{
+    display: block;
+    width: 175px;
+    height: 30px;
+}
+.hero{min-height: 0;
+}
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero+footer{margin-top: 0;}
+
+
+/*探索頁logo*/
+.explore-hero img{
+width: 100%; 
+height:auto ;   
+}
+body.explore-page {
+    background-image: none;
+    background-color: white;
+}
+/*探索頁專用導覽頁*/
+.explore-page header{background-color:transparent;
+ position: relative;
+ z-index: 10; 
+}
+/*探索東東 Banner*/
+.explore-page .explore-hero{
+ position:relative;
+ top: -74px; 
+ z-index: 1;  
+}
+
+.explore-page .explore-hero img{
+    display: block;
+    width:100%;
+    height: auto;
+}
+/*探索東東標題*/
+.explore-page .explore-title{
+    position: absolute;
+    top: 63%;
+    left: 40%;
+    
+
+    font-size: 48px;
+    font-family: sans-serif;
+    color:#3c74b1;
+    white-space: nowrap;
+    margin: 0;
+}
+
+/*活動圖片區    */
+.explore-page .activity-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 36px;
+    width: 100%;
+}    
+    
+.explore-page .activity-grid article{
+    min-width: 0;
+}
+.explore-page .activity-grid img{
+    display: block;
+    width: 100%;
+    height: 200px; 
+    object-fit:cover; 
+    border-radius: 12px; 
+}
+.explore-page .activity-grid h2{
+    margin: 12px 0 0;
+    text-align: center;
+    font-size: 22px;
+    color: #0f2a1d;
+}
+.explore-page .activity-intro{
+    text-align: center;
+    padding: 10px 10px 10px;
+    color: #0f2a1d;
+}
+.explore-page .activity-intro h2{
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-top: -40px;
+}
+.explore-page.activity-intro p{
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.8px;
+    margin: 0;
+}
+.explore-page footer{
+    background-color: #122d4a;
+    height: auto;
+    min-height: 0;
+    margin-top: 32px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.explore-page footer img{
+    display: block;
+    width: 175px;
+    height: 30px;
+}
+.activity-link{
+    display: inline-block;
+    color:#345f8a;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+.activity-link:hover{
+    text-decoration: underline;
+}
+
+.activity-photo img{
+    display: block;
+    transition:transform 0.4s ease;
+}
+.activity-photo:hover img{
+    transform: scale(1.08);
+}
+nav a.current-page{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+/*關於東東*/
+body.about_us-page{
+    background: #faf8f3;
+}
+.about_us-page .about_us-hero{
+    background: none;
+    height: auto;
+    min-height: 0;
+}
+
+/*關於東東專用導覽頁Banner圖片*/
+.about_us-hero img{
+    display: block;
+    width:100%;
+    height: auto;
+}
+.about_us-page header{
+    background-color:transparent;
+    position: relative;
+    z-index: 10; 
+    }
+.about_us-page .about_us-hero{
+ position:relative;
+ top: auto; 
+ z-index: 1;  
+}
+.about_us-content{
+    width: 100%;
+    
+    margin: 0 auto;
+    padding: 0px 24px 36px;
+    
+}
+.about_us-content>p{
+    text-align: left;
+}
+.about_us-content>h1{
+    margin-top: 36px;
+}
+/*關於東東品牌形象影片*/
+/* 影片區的留白與文字置中 */
+.brand-film {
+  text-align: center;
+  padding: 40px 20px 60px;
+}
+
+.brand-film h2 {
+  margin-bottom: 24px;
+}
+
+/* 封面範圍，也是播放圖示的定位基準 */
+.brand-film .film-cover {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  background: transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+/* 封面圖片 */
+.brand-film .film-cover img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* 中央播放圖示 */
+.film-cover .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+
+  color: white;
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+/* 滑鼠移入，封面微微放大 */
+.film-cover:hover img {
+  transform: scale(1.04);
+}
+
+/* 下方提示文字 */
+.brand-film p {
+  margin-top: 16px;
+  color: #285443;
+  font-size: 16px;
+}
+.brand-film video {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+.about_us-page footer img{
+    display: block;
+    width: 175px;
+    height: 30px;
+}
+/*關於東東品牌形象圖片*/
+.about_us-page .brand-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    width: 100%;
+}        
+.about_us-page .brand-grid article{
+    min-width: 0;
+}
+.about_us-page .brand-grid img{
+    display: block;
+    width: 100%;
+    height: auto; 
+    object-fit:cover; 
+    border-radius: 12px; 
+}
+.about_us-page h1{
+    margin: 28px 0 28px;
+    text-align: center;
+    font-size: 48px;
+    color: #0f2a1d;
+}
+.about_us-page h2{
+    margin: 28px 0 28px;
+    text-align: center;
+    font-size: 28px;
+    color: #0f2a1d;
+}
+.brand-grid{
+    overflow: visible;/*超出框框後效果，繼續顯示在框外，是預設值*/
+}
+.brand-grid{
+    display: block;
+    transition:transform 0.4s ease;/*平滑放大*/
+}
+.brand-grid :hover img{
+    transform: scale(1.08);/*放大成1.08倍*/
+}
+/*房型介紹*/
+
+.rooms-page nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.rooms-hero img{
+    display: block;
+    width:100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.rooms-page header{
+    background-color:transparent;
+    position: relative;
+    z-index: 10; 
+    }
+.rooms-page .rooms-hero{
+ position:relative;
+ top: auto; 
+ z-index: 1;  
+}
+/*房型介紹標題*/
+.rooms-title{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    font-size: 40px;
+    font-family: sans-serif;
+    color:#dfe0e0;
+    white-space: normal;
+    margin: 0;
+    text-align: center;
+}
+
+/*房型圖片區*/
+.rooms-page .rooms-grid{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0, 1fr));
+    gap: 40px;
+    width: 100%;
+}    
+.rooms-page .rooms-photo{
+    min-width: 0;
+}   
+.rooms-page .rooms-photo img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px; 
+}
+.rooms-page .rooms-photo h2{
+    margin: 12px 0 0;
+    text-align: center;
+    font-size: 22px;
+    color: #0f2a1d;
+}
+    
+
+.rooms-page .rooms-intro>h2{
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #da5622;
+    margin-bottom: 0;
+}
+.rooms-page .rooms-intro>h1{
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #272625;
+    margin-top: 20px;
+}
+
+
+.rooms-page footer{
+    background-color: #122d4a;
+    height: auto;
+    min-height: 0;
+    margin-top: 32px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.rooms-page footer img{
+    display: block;
+    width: 175px;
+    height: 30px;
+}
+.rooms-link{
+    display: inline-block;
+    color:#345f8a;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+.rooms-link:hover{
+    text-decoration: underline;
+}
+
+.rooms-photo img{
+    display: block;
+    transition:transform 0.4s ease;
+}
+.rooms-photo:hover img{
+    transform: scale(1.08);
+}
+/*園區設施*/
+.facilities-hero img{
+    display: block;
+    width:100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.facilities-title1{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    font-size: 48px;
+    font-family: sans-serif;
+    color:#dfe0e0;
+    white-space: normal;
+    margin: 0;
+    text-align: center;
+}
+.facilities-page .facilities-grid1{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+}  
+.facilities-page .facilities-grid2{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+} 
+.facilities-page .facilities-grid3{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+}   
+.facilitiess-page .facilities-photo{
+    min-width: 0;
+}   
+.facilities-page .facilities-photo img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px #999; 
+}  
+.facilities-intro>h3
+    {color: #da5622;
+    font-size: 28px;
+}
+.facilities-intro>h2
+    {color: #272625;
+    font-size: 40px;
+}
+
+/*套用淡入動畫,透明變成完全顯示，動畫持續1.5秒。*/
+.fade-in{animation:fadeInUp 1.5s ease-out both;}
+/*動畫開始到結束的變化，ease-out接近結束時嗎下來。both動畫前後維持對應的狀態*/
+@keyframes fadeInUp{
+    from{opacity: 0;
+    }
+    to{opacity: 1;
+    }
+}
+
+
